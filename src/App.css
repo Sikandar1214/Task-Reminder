@@ -1,0 +1,139 @@
+/* src/App.css */
+
+
+/* Ensure the body takes up the full height of the viewport */
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+    /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    /* Font family */
+}
+
+
+/* Main container styling */
+
+.container {
+    max-width: 600px;
+    /* Limit width */
+    width: 100%;
+    /* Full width up to max-width */
+    padding: 20px;
+    background-color: #fff;
+    /* Background color of the container */
+    border-radius: 12px;
+    /* Rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    /* Deeper shadow for more depth */
+    text-align: center;
+    /* Center text inside container */
+}
+
+
+/* Heading styling */
+
+h1 {
+    color: #333;
+    /* Darker color for better contrast */
+    margin-bottom: 20px;
+    /* Space below heading */
+}
+
+
+/* Style for the task form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    gap: 10px;
+    /* Space between form elements */
+    align-items: center;
+    /* Center items horizontally */
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: calc(100% - 24px);
+    /* Full width with padding and margin */
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    /* Smooth transitions */
+    width: calc(100% - 24px);
+    /* Full width with padding and margin */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    /* Slight zoom effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Deeper shadow on hover */
+}
+
+
+/* Style for the task list */
+
+ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transitions */
+}
+
+li:hover {
+    background-color: yellow;
+    /* background-color: #e9ecef; */
+    /* Light gray background on hover */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+
+/* Style for the footer */
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    /* Background color of the footer */
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+}
